@@ -35,5 +35,13 @@ export class ProductsComponent extends BaseComponent implements OnInit {
       stock: 50,
       price: 2.5
     }).subscribe();
+
+    this.httpClientService.post({
+      controller:"products"
+    },{
+      name: 'Silgi',
+      stock: 50,
+      price: 2.5
+    }).subscribe();
   }
 }
